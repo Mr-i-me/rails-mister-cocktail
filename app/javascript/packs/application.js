@@ -15,4 +15,7 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
+$('#myCarousel').carousel({
+   interval: 3000,
+})
 console.log('Hello World from Webpacker')
