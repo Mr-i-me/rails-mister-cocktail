@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Attributes
 
-Things you may want to cover:
+  * A `cocktail` has a ` name `
+  * An `ingredient` has a ` name `
+  * A `dose` is the amount needed     for  each `ingredient` in a ` cocktail`
+  *  So each `dose` references a `cocktail`, an `ingredient` and has a `description`.
 
-* Ruby version
+## Models
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### cocktail
+  * name
+### ingredient
+  * name
+### dose
+  * description
+  * cocktail, t.references
+  * ingredient, t.references
